@@ -8,95 +8,159 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
-    <header>
-      <img src="img/logo.png" alt="Logo du projet" class="logo">
-      <nav>
-        <ul>
-          <li><a href="https://paschalis369.github.io/acceuil_1/">Accueil</a></li>
-          <li><a href="https://paschalis369.github.io/-quipe_git/">Qui sommes-nous ?</a></li>
-          <li><a href="https://paschalis369.github.io/contact_git/">Contact</a></li>
-        </ul>
-      </nav>
-    </header>
+    <nav class="navbar bg-primary" data-bs-theme="dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="file:///C:/xampp/htdocs/Projet1/Acceuil/index.html">Navbar</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="file:///C:/xampp/htdocs/Projet1/Acceuil/index.html">Acceuil</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active dropdown-toggle" href="file:///C:/xampp/htdocs/Projet1/%C3%A9quipe/index.html" role="button" data-bs-toggle="dropdown" aria-expanded="false">Qui sommes-nous ?</a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="file:///C:/xampp/htdocs/Projet1/%C3%A9quipe/index.html">Présentation et CV</a></li>
+                <li><a class="dropdown-item" href="file:///C:/xampp/htdocs/Projet1/CV/index.html">CV</a></li>
+                <li><a class="dropdown-item" href="#">Informations tiers</a></li>
+              </ul>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link" href="file:///C:/xampp/htdocs/Projet1/contact/index.html">
+                Contact
+              </a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
 
     <section class="liste-equipe">
       <h1>Notre équipe</h1>
       
     </section>
-
     
+    <div class="tab-buttons">
+      <button onclick="showTab('Regus', this)">Regus Parnassus</button>
+      <button onclick="showTab('Prophète', this)">Prophète Chauve</button>
+      <button onclick="showTab('Basket', this)">Basketteur</button>
+    </div>
+
     <!-- Regus Parnassus -->
     <section class="liste-equipe1">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-6">
-            <div class="membres">
-              <img src="images/Photos_membres/Boruto.jpg" alt="Mayoro" width="200" height="200" class="rounded-circle">
-              <p>Professeur Mayoro Diop <br>
-              Responsable de formation CPGE</p>
-              <br>
-              <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+      <div id="Regus" class="tab-content active">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-6">
+              <div class="membres">
+                <img src="images/Photos_membres/Boruto.jpg" alt="Mayoro" width="200" height="200" class="rounded-circle">
+                <p>Professeur Mayoro Diop <br>
+                Responsable de formation CPGE</p>
+                <br>
+                <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <img src="images/Curriculum Vitae/CV_Test.jpg" alt="CV de Regus Parnassus" width="496" height="706">
+            <div class="col-6">
+              <img src="images/Curriculum Vitae/CV.png" alt="CV de Regus Parnassus" width="496" height="706">
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Fin Regus Parnassus -->
+      <!-- Fin Regus Parnassus -->
 
-    <!-- Fin Prophète Chauve -->
-    <section class="liste-equipe2">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-6">
-            <div class="membres">
-              <img src="images/Photos_membres/Prophète_Chauve.png" alt="Mayoro" width="200" height="200" class="rounded-circle">
-              <p>Professeur Mayoro Diop <br>
-              Responsable de formation CPGE</p>
-              <br>
-              <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+      <!-- Fin Prophète Chauve -->
+      <div id="Prophète" class="tab-content">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-6">
+              <div class="membres">
+                <img src="images/Photos_membres/Prophète_Chauve.png" alt="Mayoro" width="200" height="200" class="rounded-circle">
+                <p>Professeur Mayoro Diop <br>
+                Responsable de formation CPGE</p>
+                <br>
+                <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <img src="images/Curriculum Vitae/CV_Prophète_Chauve.png" alt="CV du Prophète Chauve" width="496" height="706">
+            <div class="col-6">
+              <img src="images/Curriculum Vitae/CV_Prophète_Chauve.png" alt="CV du Prophète Chauve" width="496" height="706">
+            </div>
           </div>
         </div>
       </div>
-    </section>
-    <!-- Fin Prophète Chauve -->
+      <!-- Fin Prophète Chauve -->
 
-    <!-- Basketteur -->
-    <section class="liste-equipe3">
-      <div class="container text-center">
-        <div class="row">
-          <div class="col-6">
-            <div class="membres">
-              <img src="images/Photos_membres/Basketteur.png" alt="Mayoro" width="200" height="200" class="rounded-circle">
-              <p>Professeur Mayoro Diop <br>
-              Responsable de formation CPGE</p>
-              <br>
-              <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
-                  Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+      <!-- Basketteur -->
+      <div id="Basket" class="tab-content">
+        <div class="container text-center">
+          <div class="row">
+            <div class="col-6">
+              <div class="membres">
+                <img src="images/Photos_membres/Basketteur.png" alt="Mayoro" width="200" height="200" class="rounded-circle">
+                <p>Professeur Mayoro Diop <br>
+                Responsable de formation CPGE</p>
+                <br>
+                <p style="text-align: justify;">Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript. Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.Créez des sites rapides et réactifs avec Bootstrap
+                    Boîte à outils front-end puissante, extensible et riche en fonctionnalités. Créez et personnalisez avec Sass, utilisez un système de grille et des composants prédéfinis, et donnez vie à vos projets grâce à de puissants plugins JavaScript.</p>
+              </div>
             </div>
-          </div>
-          <div class="col-6">
-            <img src="images/Curriculum Vitae/CV_Basketteur.png" alt="CV du Basketteur" width="496" height="706">
+            <div class="col-6">
+              <img src="images/Curriculum Vitae/CV_Basketteur.png" alt="CV du Basketteur" width="496" height="706">
+            </div>
           </div>
         </div>
       </div>
     </section>
     <!-- Fin Basketteur -->
 
+    <script>
+      function showTab(tabId, button) {
+        // Masquer tous les contenus
+        document.querySelectorAll('.tab-content').forEach(tab => tab.classList.remove('active'));
+
+        // Afficher le bon contenu
+        document.getElementById(tabId).classList.add('active');
+
+        // Retirer la classe active des boutons
+        document.querySelectorAll('.tab-buttons button').forEach(btn => btn.classList.remove('active'));
+
+        // Ajouter la classe active au bouton cliqué
+        button.classList.add('active');
+
+        // Changer la couleur de fond
+        switch (tabId) {
+          case 'Regus':
+            document.body.style.backgroundColor = '#ffe48dd7';
+            break;
+          case 'Prophète':
+            document.body.style.backgroundColor = '#cceeff';
+            break;
+          case 'Basket':
+            document.body.style.backgroundColor = '#ffcccc';
+            break;
+        }
+      }
+
+      // Exécuter une fois au chargement pour activer Regus par défaut
+      window.addEventListener('DOMContentLoaded', () => {
+        const defaultButton = document.querySelector('.tab-buttons button');
+        showTab('Regus', defaultButton);
+      });
+    </script>
+    <script src="js - Copie/bootstrap.bundle.min.js"></script>
     <footer>
       <p>&copy; 2025 Mon Projet. Tous droits réservés.</p>
     </footer>
