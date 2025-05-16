@@ -145,12 +145,59 @@ video, audio {
 
 @media screen and (max-width: 415px) {
   p, h1, h2, h3, h4, h5, h6 {
-    font-size: 2em;
+    font-size: 40px;
   }
 
-  header a {
-    font-size: 1.8em;
-    padding: 0 10px;
+  main div .tab-buttons{
+    margin-left: 10px !important;
+  }
+
+  .navbar {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
+    font-size: 1.2rem !important;
+  }
+
+  /* Réduire la largeur du bloc central */
+  .liste-equipe1 .container {
+    width: 90% !important;
+    margin: 0 auto !important;
+    padding: 1rem !important;
+    background-color: #ffffff !important;
+    border-radius: 10px !important;
+  }
+
+  /* Empiler les colonnes verticalement */
+  .liste-equipe1 .row > div {
+    flex: 0 0 100% !important;
+    max-width: 100% !important;
+    margin-bottom: 1rem !important;
+    text-align: center !important;
+  }
+
+  /* Forcer une hauteur minimale */
+  .liste-equipe1 {
+    min-height: 70vh !important;
+  }
+
+  /* Footer toujours en bas */
+  body {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: 100vh !important;
+    margin: 0 !important;
+  }
+
+  main {
+    flex: 1 !important;
+  }
+
+  footer {
+    background-color: #003366 !important;
+    color: white !important;
+    text-align: center !important;
+    padding: 10px 0 !important;
+    margin-top: auto !important;
   }
 }
 
